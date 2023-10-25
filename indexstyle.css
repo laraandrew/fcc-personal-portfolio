@@ -1,20 +1,26 @@
 .name{
-    margin: auto;
+    border: 3px dotted pink;
+    display: block; 
+    align-content: center;
+    /* flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: 300px; */
+    margin: 1 auto; 
     padding: 0;
-    width: auto;
-    height: 200px;
-    align-items: center;
-    display: flex;
+    
+
 }
 .navbar {
     display: flex;
+    flex-wrap: wrap;
+    
 
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     list-style-type: none;
 }
 
-.navitem {
+.navbar li {
     list-style-type: none;
 
 }
