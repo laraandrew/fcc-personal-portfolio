@@ -1,0 +1,42 @@
+.name{
+    margin: auto;
+    padding: 0;
+    width: auto;
+    height: 200px;
+    align-items: center;
+    display: flex;
+}
+.navbar {
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.navitem {
+    list-style-type: none;
+
+}
+
+.navitem a {
+    color: rgb(98, 0, 255);
+    text-decoration:plum;
+    padding: 10px 20px;
+}
+
+.navitem a:hover {
+    background-color: #555;
+}
+
+/* body {
+
+}
+
+.experience {
+
+}
+
+h1{
+    
+} */
