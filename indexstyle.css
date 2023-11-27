@@ -3,6 +3,9 @@ html {
 
 }
 
+ul {
+    list-style-type: none;
+}
 
 .name{
     border: 3px dotted pink;
@@ -38,21 +41,19 @@ html {
     background-color: #555;
 }
 
+
+.list {
+    font-size: 14px;
+}
+
 body {
     display: flex;
     flex-direction: column;
     gap: 8px;
     justify-content: center;
     align-items: center;
-
+    font-family: 'Courier New', Courier, monospace;
+    background-image: linear-gradient(purple, blue, green);
     background-color: chocolate;
     color: aliceblue;
 }
-
-/* .experience {
-
-}
-
-h1{
-    
-} */ 
