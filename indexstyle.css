@@ -46,14 +46,32 @@ ul {
     font-size: 14px;
 }
 
+.section1 {
+    gap: 8px;
+    justify-content: space-between;
+}
+
+.description {
+    text-align: start;
+    flex-basis: 300px;
+}
+
+
+
 body {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 30px;
     justify-content: center;
     align-items: center;
     font-family: 'Courier New', Courier, monospace;
     background-image: linear-gradient(purple, blue, green);
     background-color: chocolate;
     color: aliceblue;
+}
+
+.section1, .section2, .section3, .section4, .section5 {
+    display: flex;
+    margin: 0;
+    padding: 20px;
 }
