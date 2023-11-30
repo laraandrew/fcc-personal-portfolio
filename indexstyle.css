@@ -1,77 +1,83 @@
 html {
     scroll-behavior: smooth;
-
-}
-
-ul {
+  }
+  
+  ul {
     list-style-type: none;
-}
-
-.name{
-    border: 3px dotted pink;
-    display: block; 
-    align-content: center;
-    margin: 1 auto; 
+  }
+  
+  .name {
+    border: 3px dashed #ffb6c1; /* pastel pink */
+    display: block;
+    text-align: center;
+    margin: 1em auto;
     padding: 16px;
-}
-
-.navbar {
+    font-size: 1.5em;
+    color: #333;
+    background-color: #fff0f5; /* pastel lavender blush */
+  }
+  
+  .navbar {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    align-self: stretch;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     list-style-type: none;
-}
-
-.navbar li {
+    background-color: #add8e6; /* pastel light blue */
+  }
+  
+  .navbar li {
     list-style-type: none;
-
-}
-
-.navitem a {
-    color: rgb(98, 0, 255);
-    text-decoration:plum;
+  }
+  
+  .navitem a {
+    color: #8a2be2; /* blue violet */
+    text-decoration: none;
     padding: 10px 20px;
-}
-
-.navitem a:hover {
-    background-color: #555;
-}
-
-
-.list {
+    transition: background-color 0.3s ease;
+    background-color: #f0f8ff; /* alice blue */
+  }
+  
+  .navitem a:hover {
+    background-color: #dda0dd; /* pastel plum */
+  }
+  
+  .list {
     font-size: 14px;
-}
-
-.section1 {
-    gap: 8px;
-    justify-content: space-between;
-}
-
-.description {
-    text-align: start;
-    flex-basis: 300px;
-}
-
-
-
-body {
+  }
+  
+  .section1,
+  .section2,
+  .section3,
+  .section4,
+  .section5 {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f0f8ff; /* alice blue */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .description {
+    text-align: center;
+    max-width: 600px;
+    margin: 10px auto;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     font-family: 'Courier New', Courier, monospace;
-    background-image: linear-gradient(purple, blue, green);
-    background-color: chocolate;
-    color: aliceblue;
-}
-
-.section1, .section2, .section3, .section4, .section5 {
-    display: flex;
+    background-image: linear-gradient(to bottom, #ffdab9, #00ffff);
+    color: #333;
     margin: 0;
     padding: 20px;
-}
+  }
+  
+  
