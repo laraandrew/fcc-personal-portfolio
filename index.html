@@ -8,10 +8,13 @@
 </head>
 <body>
     <nav id="navbar">
-        <a href="#welcome-section">Home</a>
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <div class="menu">
+            <a href="#welcome-section">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
     </nav>
     
     <header id="welcome-section">
@@ -25,26 +28,30 @@
             <div class="project-tile">
                 <a href="https://example.com/project1" target="_blank">
                     <img src="./website_assets/photography.png" alt="Photography logo">
-                    <h2>LensByLara</h2>
-                    <p>A simple hobby that turned into a passion</p>
+                    <div>
+                        <h2>LensByLara</h2>
+                        <p>A simple hobby that turned into a passion</p>
+                    </div>
                 </a>
                 <button class="more-butt" id="photo-butt">Learn more!</button>
             </div>
             <div class="project-tile">
                 <a href="https://example.com/project2" target="_blank">
                     <img src="./website_assets/government.png" alt="Government logo">
-                    <h2>Politics and Progress</h2>
-                    <p>Proin tortor enim, hendrerit vel laoreet ut, pulvinar quis velit. 
-                        Suspendisse vitae maximus lorem, ac hendrerit massa</p>
+                    <div>
+                        <h2>Politics and Progress</h2>
+                        <p>Proin tortor enim, hendrerit vel laoreet ut, pulvinar quis velit. Suspendisse vitae maximus lorem, ac hendrerit massa</p>
+                    </div>
                 </a>
                 <button class="more-butt" id="gov-butt">Dive in</button>
             </div>
             <div class="project-tile">
                 <a href="https://example.com/project3" target="_blank">
                     <img src="./website_assets/technology.png" alt="Technology logo">
-                    <h2>Computer Science</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nisi neque, 
-                        faucibus ut eros in, tristique venenatis dui. </p>
+                    <div>
+                        <h2>Computer Science</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nisi neque, faucibus ut eros in, tristique venenatis dui.</p>
+                    </div>
                 </a>
                 <button class="more-butt" id="tech-butt">Click here</button>
             </div>
@@ -52,11 +59,8 @@
         
         <section id="about" class="main-section">
             <header>About Me</header>
-            <img class="grad-pic" src="website_assets/aboutme.png" alt="Picture of Andrew and his parents at his college graduation" width="300px">
-            <p class="about-me-text">Praesent sagittis interdum pharetra. Sed lorem ipsum, luctus et pellentesque at, lobortis quis augue. Morbi eget fringilla velit. Aliquam 
-                eu erat a quam mollis fermentum. Sed aliquet consectetur sapien et facilisis. Maecenas dapibus sollicitudin dolor eu vestibulum. Proin 
-                tellus enim, dignissim id varius et, facilisis at enim. Morbi in ultricies mauris. Donec mauris magna, tristique sed lectus non, consectetur 
-                luctus tortor. Aliquam eget dui rutrum, varius eros at, placerat felis. Duis vitae semper leo. Duis commodo orci sit amet ultricies imperdiet.</p>
+            <img class="grad-pic" src="website_assets/aboutme.png" alt="Picture of Andrew and his parents at his college graduation">
+            <p class="about-me-text">Praesent sagittis interdum pharetra. Sed lorem ipsum, luctus et pellentesque at, lobortis quis augue. Morbi eget fringilla velit. Aliquam eu erat a quam mollis fermentum. Sed aliquet consectetur sapien et facilisis. Maecenas dapibus sollicitudin dolor eu vestibulum. Proin tellus enim, dignissim id varius et, facilisis at enim. Morbi in ultricies mauris. Donec mauris magna, tristique sed lectus non, consectetur luctus tortor. Aliquam eget dui rutrum, varius eros at, placerat felis. Duis vitae semper leo. Duis commodo orci sit amet ultricies imperdiet.</p>
         </section>
         
         <section id="contact" class="main-section">
@@ -76,5 +80,12 @@
     <footer>
         <p>&copy; 2024 Andrew Lara | <a id="profile-link" href="https://github.com/lensbyLara" target="_blank">GitHub</a></p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>

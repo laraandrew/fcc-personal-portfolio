@@ -1,3 +1,4 @@
+/* General styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,13 +19,14 @@ nav {
   color: #fff;
   padding: 1em;
   display: flex;
-  justify-content: center;
-  gap: 1em;
+  justify-content: space-between;
+  align-items: center;
   z-index: 1000;
 }
 
-p {
-  text-align: center;
+nav .menu {
+  display: flex;
+  gap: 1em;
 }
 
 nav a {
@@ -36,6 +38,11 @@ nav a {
 nav a:hover {
   background-color: #FFA07A;
   border-radius: 5px;
+}
+
+nav .menu-icon {
+  display: none;
+  cursor: pointer;
 }
 
 header#welcome-section {
@@ -59,7 +66,7 @@ header#welcome-section p {
   font-size: 1.5em;
 }
 
-#about{
+#about {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -67,9 +74,10 @@ header#welcome-section p {
   gap: 1em;
 }
 
-.grad-pic{
+.grad-pic {
   width: 300px;
   height: auto;
+  border-radius: 50%;
 }
 
 .main-section {
@@ -93,7 +101,10 @@ header#welcome-section p {
   border-radius: 10px;
   margin-bottom: 2em;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -103,10 +114,10 @@ header#welcome-section p {
 }
 
 .project-tile img {
-  max-width: 100%;
+  max-width: 30%;
   height: auto;
   border-radius: 10px;
-  margin-bottom: 1em;
+  margin-right: 1em;
 }
 
 .project-tile h2 {
@@ -117,6 +128,21 @@ header#welcome-section p {
 .project-tile p {
   font-size: 1em;
   color: #666;
+}
+
+.project-tile button {
+  padding: 0.5em 1em;
+  background-color: #FFD700;
+  color: #2F4F4F;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.project-tile button:hover {
+  background-color: #FF4500;
+  color: #fff;
 }
 
 form {
@@ -150,6 +176,7 @@ form input[type="submit"] {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 form input[type="submit"]:hover {
@@ -178,19 +205,42 @@ footer a:hover {
 
 /* Media Query for Responsiveness */
 @media (max-width: 768px) {
-  nav {
+  nav .menu {
+    display: none;
     flex-direction: column;
   }
+
+  nav .menu-icon {
+    display: block;
+  }
+
+  nav .menu-icon.active + .menu {
+    display: flex;
+  }
+
   header#welcome-section h1 {
     font-size: 2.5em;
   }
+
   header#welcome-section p {
     font-size: 1.2em;
   }
+
   .main-section {
     padding: 2em 1em;
   }
+
   .project-tile {
-    margin-bottom: 1em;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-tile img {
+    max-width: 100%;
+    margin: 0 0 1em 0;
+  }
+
+  .project-tile button {
+    align-self: center;
   }
 }
