@@ -95,42 +95,51 @@ header#welcome-section p {
   color: #FF4500;
 }
 
-.project-tile {
+.project-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   background-color: #e8e8e8;
   padding: 1em;
   border-radius: 10px;
   margin-bottom: 2em;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.project-tile:hover {
+.project-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.project-tile img {
+.project-image {
   max-width: 30%;
   height: auto;
   border-radius: 10px;
   margin-right: 1em;
 }
 
-.project-tile h2 {
+.project-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-content h2 {
   font-size: 1.5em;
   margin-bottom: 0.5em;
+  color: #2F4F4F;
 }
 
-.project-tile p {
+.project-content p {
   font-size: 1em;
   color: #666;
+  margin-bottom: 1em;
 }
 
-.project-tile button {
+.project-content .more-butt {
+  align-self: flex-start;
   padding: 0.5em 1em;
   background-color: #FFD700;
   color: #2F4F4F;
@@ -140,7 +149,7 @@ header#welcome-section p {
   transition: background-color 0.3s, color 0.3s;
 }
 
-.project-tile button:hover {
+.project-content .more-butt:hover {
   background-color: #FF4500;
   color: #fff;
 }
@@ -230,17 +239,17 @@ footer a:hover {
     padding: 2em 1em;
   }
 
-  .project-tile {
+  .project-card {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .project-tile img {
+  .project-image {
     max-width: 100%;
     margin: 0 0 1em 0;
   }
 
-  .project-tile button {
+  .project-content .more-butt {
     align-self: center;
   }
 }
