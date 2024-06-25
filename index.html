@@ -54,4 +54,32 @@
         <section id="about" class="main-section">
             <header>About Me</header>
             <img class="grad-pic" src="website_assets/aboutme.png" alt="Picture of Andrew and his parents at his college graduation">
-            <p class="about-me-text">Praesent sagittis interdum pharetra. Sed lorem ipsum, luctus et pellentesque at, lobortis quis augue. Morbi eget fringilla velit. Aliquam eu erat a quam mollis fermentum. Sed aliquet consectetur sapien et facilisis. Maecenas dapibus sollicitudin dolor eu vestibulum. Proin tellus enim, dignissim id varius et, facilisis at enim. Morbi in ultricies mauris. Donec mauris magna, tristique sed lectus non, consectetur luctus tortor. Aliquam eget dui rutrum, varius
+            <p class="about-me-text">Praesent sagittis interdum pharetra. Sed lorem ipsum, luctus et pellentesque at, lobortis quis augue. Morbi eget fringilla velit. Aliquam eu erat a quam mollis fermentum. Sed aliquet consectetur sapien et facilisis. Maecenas dapibus sollicitudin dolor eu vestibulum. Proin tellus enim, dignissim id varius et, facilisis at enim. Morbi in ultricies mauris. Donec mauris magna, tristique sed lectus non, consectetur luctus tortor. Aliquam eget dui rutrum, varius eros at, placerat felis. Duis vitae semper leo. Duis commodo orci sit amet ultricies imperdiet.</p>
+        </section>
+        
+        <section id="contact" class="main-section">
+            <header>Contact</header>
+            <form id="form" method="post" action="https://www.freecodecamp.com/email-submit">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your Name" required>
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Enter your email" required>
+                <label for="phone">Phone Number</label>
+                <input id="phone" type="tel" placeholder="(123) 456-7890" required>
+                <input type="submit" id="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Andrew Lara | <a id="profile-link" href="https://github.com/laraandrew" target="_blank">GitHub</a></p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
